@@ -1,0 +1,14 @@
+
+
+    <form  class="container-search" (submit)="fetchWeather(weatherForm.value)" [formGroup]="weatherForm">
+        <div class="form-inline" >
+         <input type="text" class="input-search form-control mb-2 mr-sm-4" name="Location" placeholder="Type a city" formControlName="location" required type='text'>
+         <input type="submit" class="btn-search" value="Get Weather"  [disabled]="!weatherForm.valid" name="submit">
+           
+            
+            
+        </div>
+        
+    </form> 
+
+    

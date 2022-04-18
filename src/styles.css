@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { 
+    background-color: #ffffff;
+    height: 100%;
+ }
+body { margin: 0; font-family: Raleway, sans-serif; }
+
+/* container app*/
+.app-container{
+    display: flex;
+    background: #f1eeee;
+    border-radius:15px;
+    border: none;
+    box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 90%;
+    margin: 2% 2%;
+    padding:15px;
+}

@@ -1,0 +1,14 @@
+.container-bookmarked{
+ margin: 10px 15px;
+
+}
+
+h3{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 50px 25px;
+}
+
+.material-icons.color_red{
+    color:#96240e; 
+ }

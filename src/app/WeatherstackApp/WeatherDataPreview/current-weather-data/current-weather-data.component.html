@@ -1,0 +1,33 @@
+<div class="weatherData" *ngIf="weatherData; else showMessage">
+
+    <div class="weather-detail">
+        <h3>
+            {{weatherData.location.name}}, {{weatherData.location.country}} 
+            <span class="icon-color"><i class="fas fa-heart"></i></span>
+        </h3>
+    </div>
+    
+    <div class="row">
+
+        <div class="col-sm">
+            {{weatherData.location.localtime}}
+            <img src="{{weatherData.current.weather_icons}}" />
+            {{this.weatherData?.current.uv_index}}
+        </div>
+
+        <div class="col-sm">
+            {{this.weatherData?.current.temperature}} °C
+        </div>
+
+        <div class="col-sm">
+            <p>Humidity: {{this.weatherData?.current.humidity}} mm </p>
+            <p>Pressure: {{this.weatherData?.current.pressure}} mb</p> 
+            <p> Wind speed: {{this.weatherData?.current.wind_speed}} km/h</p>
+        </div>
+
+      </div>
+</div>
+
+<ng-template #showMessage>
+    <p>There is no data in the state</p>
+</ng-template>

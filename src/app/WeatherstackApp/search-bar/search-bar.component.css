@@ -1,0 +1,21 @@
+/*container search*/
+.container-search{
+ margin: 5% 15%;
+}
+
+/*input search*/
+.input-search{
+border: 2px solid #808080;
+width: 75%;
+
+}
+
+/*btn search*/
+.btn-search{
+    color: #fff;
+    background-color:#f47b21;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 14px;
+    font-size: 13px;
+}
